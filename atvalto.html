@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számrendszer Átváltó</title>
+    <link rel="stylesheet" href="atvalto.css">
+
+
+</head>
+<body>
+    <div class="container">
+        
+        <div id="display" class="display"></div>
+
+        <label for="number">Szám:</label>
+        <input type="text" id="number" placeholder="Adjon meg egy számot">
+
+        <label for="fromBase">Kiindulási számrendszer:</label>
+        <select id="fromBase">
+            <option value="10">Decimális</option>
+            <option value="16">Hexadecimális</option>
+            <option value="8">Oktális</option>
+            <option value="2">Bináris</option>
+        </select>
+
+        <label for="toBase">Cél számrendszer:</label>
+        <select id="toBase">
+            <option value="10">Decimális</option>
+            <option value="16">Hexadecimális</option>
+            <option value="8">Oktális</option>
+            <option value="2">Bináris</option>
+        </select>
+<br><br>
+
+        <button onclick="convertBase()">Átváltás</button>
+
+        
+    </div>
+
+    <script  src="atvalto.js"></script>
+
+</body>
+</html>

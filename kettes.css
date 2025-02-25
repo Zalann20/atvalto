@@ -15,10 +15,7 @@ justify-content: center;
 }
 
 .text{
-background-color: white;
-border: 5px white;
-border-radius: 15px;
-font-size: large;
+
 }
 .container {
     background-color: darkgray;
@@ -30,6 +27,7 @@ font-size: large;
     box-sizing: border-box;
     text-align: center;
     
+    height: 500px;
     
 }
 

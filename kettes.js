@@ -20,7 +20,7 @@ function checkAnswer() {
     }
 
     if (parseInt(userAnswer) === correctAnswer) {
-        document.getElementById("result").textContent = "Helyes válasz! 🎉";
+        document.getElementById("result").textContent = "Helyes válasz!";
         document.getElementById("result").style.color = "green";
     } else {
         document.getElementById("result").textContent = `Helytelen! A helyes válasz: ${correctAnswer}`;

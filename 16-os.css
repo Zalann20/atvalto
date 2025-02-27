@@ -48,15 +48,7 @@ justify-content: center;
     margin: 20px 0;
 }
 
-input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    font-size: 1em;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 15px;
-    box-sizing: border-box;
-}
+
 
 button {
 padding: 10px 20px;

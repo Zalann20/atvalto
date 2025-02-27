@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="nyolcas.css">
 </head>
 <body>
+    <div class="test">
     <h1>A 8-as számrendszer</h1>
         <h2>A nyolcas számrendszerről</h2>
             <p>A 8-as számrendszer egy helyiértékes számrendszer, amelynek alapja 8. Ez azt jelenti, hogy az egyes számjegyek 0-tól 7-ig terjedhetnek. Az oktális számrendszert főként informatikában használják</p>
@@ -15,11 +16,22 @@
 
                 Egy 8-as számrendszerbeli szám 10-es számrendszerbeli értékét úgy kapjuk meg, hogy a számjegyeket megszorozzuk a megfelelő helyiértéket képviselő 8 hatványaival, majd az így kapott eredményeket összeadjuk.</p>
         <h2>Példa</h2>
-                <p>527=5*8<sup>2</sup>+2*8<sup>1</sup>+7*8<sup>0</sup>
+                <p>527=5*8<sup>2</sup>+2*8<sup>1</sup>+7*8<sup>0</sup> =
                 
                 
                 </p>
-                <p>320+16+7 = 343</p>
-    
+                <p>= 320+16+7 = 343</p>
+    </div>
+    <div class="task">
+        <div class="container">
+            <h1>Oktális -> Decimális Gyakorló</h1>
+            <div class="binary-question" id="binaryQuestion"></div>
+            <input type="text" id="userAnswer" placeholder="Írd be a decimális értéket">
+            <button onclick="checkAnswer()">Ellenőrzés</button>
+            <div class="result" id="result"></div>
+            <button onclick="generateQuestion()">Következő Feladat</button>
+        </div>
+    </div>
+    <script  src="nyolcas.js"></script>
 </body>
 </html>

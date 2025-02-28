@@ -1,10 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to top, rgb(34, 33, 33), rgb(190, 187, 187));
+    background-color: black;
     margin: 0;
     padding: 0;
-    
+    width: 100%;
     min-height: 100vh;
+    color: white;
+}
+
+.test{
+    
+   
 }
 
 .task{
@@ -23,41 +29,37 @@ justify-content: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 2500px;
     box-sizing: border-box;
     text-align: center;
-    
-    height: 500px;
+    color: black;
+    height: 695px;
     
 }
 
-h1 {
-    color: #333333;
-}
 
-.binary-question {
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.hex-question {
     font-size: 1.5em;
     margin: 20px 0;
 }
 
-input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    font-size: 1em;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 15px;
-    box-sizing: border-box;
-}
+
 
 button {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+padding: 10px 20px;
+background-color: black;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+margin: 5px;
+width: 80%;
 }
 
 button:hover {

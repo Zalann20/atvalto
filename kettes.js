@@ -1,32 +1,30 @@
-
-let currentBinary = "";
+let currentCorrectAnswer = 0;
 
 function generateQuestion() {
-    const randomNumber = Math.floor(Math.random() * 256); // 0-255 között
-    currentBinary = randomNumber.toString(2);
-    document.getElementById("binaryQuestion").textContent = `Mi a(z) ${currentBinary} bináris szám decimális megfelelője?`;
-    document.getElementById("userAnswer").value = "";
-    document.getElementById("result").textContent = "";
+const randomNumber = Math.floor(Math.random() * 256); // 0-255 között
+const binValue = randomNumber.toString(2).padStart(8, '0');
+currentCorrectAnswer = randomNumber;
+document.getElementById("binQuestion").textContent = `Mi a(z) ${binValue} bináris szám decimális megfelelője?`;
+document.getElementById("userAnswer").value = "";
+document.getElementById("result").textContent = "";
+
 }
 
 function checkAnswer() {
-    const userAnswer = document.getElementById("userAnswer").value.trim();
-    const correctAnswer = parseInt(currentBinary, 2);
+const userInput = parseInt(document.getElementById("userAnswer").value, 10);
+if (userInput === currentCorrectAnswer) {
+document.getElementById("result").textContent = "Helyes válasz! 🎉";
+document.getElementById("result").style.color = "green";
 
-    if (userAnswer === "") {
-        document.getElementById("result").textContent = "Irjon be egy számot!";
-        document.getElementById("result").style.color = "red";
-        return;
-    }
+} 
 
-    if (parseInt(userAnswer) === correctAnswer) {
-        document.getElementById("result").textContent = "Helyes válasz!";
-        document.getElementById("result").style.color = "green";
-    } else {
-        document.getElementById("result").textContent = `Helytelen! A helyes válasz: ${correctAnswer}`;
-        document.getElementById("result").style.color = "red";
-    }
+else {
+document.getElementById("result").textContent = `Helytelen! A helyes válasz: ${currentCorrectAnswer}`;
+document.getElementById("result").style.color = "red";
+
+}
 }
 
-// Induláskor generáljon egy kérdést
+        
 window.onload = generateQuestion;
+    

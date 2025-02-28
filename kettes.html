@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="kettes.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2-es számrendszer</title>
+<link rel="stylesheet" href="kettes.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2-es számrendszer</title>
 </head>
 <body>
-    <div class="test">
-    <h1>2-es vagy bináris számrendszer</h1>
+<div class="text-section">
+<h1>2-es vagy bináris számrendszer</h1>
 
-    <h2>A kettes számrendszerről</h2>
+<h2>A kettes számrendszerről</h2>
+    
+<p>A kettes vagy bináris számrendszer olyan helyiérték-jelölő számrendszer amely a számot kizárólag a 0 és 1-es számjegyekkel ábrázolja.Ezt a számrendszert használják a modern számítógépek is. </p>
+    
+<h2>Átváltás 10-es számrendszerbe</h2>
+    
+<p>A kettes számrendszer helyiértékes számrendszer tehát jobbról balra haladva minden egyes számjegy a 2-nek az 1-el nagyobb hatványát fejezi ki a 0-dik hatványtól kezdődve amelynek értéke 1. A 2-es számrendszer értékét 10-es számrendszerben úgy kapjuk meg, hogy a 2-nek azon hatványait amelyek helyén 1-es áll összeadjuk.   </p>
+    
+<h2>Például</h2>
+    
+<p>10101101=1*2<sup>7</sup>+0*2<sup>6</sup>+1*2<sup>5</sup>+0*2<sup>4</sup>+1*2<sup>3</sup>+1*2<sup>2</sup>+0*2<sup>1</sup>+1*2<sup>0</sup>=<br> 128+0+32+0+8+4+0+1=173</p>
 
-    <p>A kettes vagy bináris számrendszer olyan helyiérték-jelölő számrendszer amely a számot kizárólag a 0 és 1-es számjegyekkel ábrázolja.Ezt a számrendszert használják a modern számítógépek is. </p>
-
-    <h2>Átváltás 10-es számrendszerbe</h2>
-
-    <p>A kettes számrendszer helyiértékes számrendszer tehát jobbról balra haladva minden egyes számjegy a 2-nek az 1-el nagyobb hatványát fejezi ki a 0-dik hatványtól kezdődve amelynek értéke 1. A 2-es számrendszer értékét 10-es számrendszerben úgy kapjuk meg, hogy a 2-nek azon hatványait amelyek helyén 1-es áll összeadjuk.   </p>
-
-    <h2>Például</h2>
-
-    <p>10101101=1*2<sup>7</sup>+0*2<sup>6</sup>+1*2<sup>5</sup>+0*2<sup>4</sup>+1*2<sup>3</sup>+1*2<sup>2</sup>+0*2<sup>1</sup>+1*2<sup>0</sup>=<br> 128+0+32+0+8+4+0+1=173</p>
-
-<br>
-<br>
-<br>
-<br><br>
-</html>
-</style>
-</head>
-<div class="task">
-    <div class="container">
-        <h1>Bináris -> Decimális Gyakorló</h1>
-        <div class="binary-question" id="binaryQuestion"></div>
-        <input type="text" id="userAnswer" placeholder="Írd be a decimális értéket">
-        <button onclick="checkAnswer()">Ellenőrzés</button>
-        <div class="result" id="result"></div>
-        <button onclick="generateQuestion()">Következő Feladat</button>
-    </div>
 </div>
+    
+<div class="practice-section">
+<h1>Bináris -> Decimális Gyakorló</h1>
+<div class="bin-question" id="binQuestion"></div>
+<input type="number" id="userAnswer" placeholder="Írd be a választ">
+<button onclick="checkAnswer()">Ellenőrzés</button>
+<div class="result" id="result"></div>
+<button onclick="generateQuestion()">Következő Feladat</button>
+
 </div>
+
+
 <script  src="kettes.js"></script>
 </body>
 </html>

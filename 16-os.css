@@ -1,73 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: row;
+min-height: 100vh;
+
 }
 
 .text-section, .practice-section {
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
+width: 50%;
+padding: 20px;
+box-sizing: border-box;
+
 }
 
 .text-section {
-    color: white;
-    background-color: black;
+color: white;
+background-color: black;
     
 }
 
 .practice-section {
-    background-color: #e0e0e0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+background-color: #e0e0e0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 }
 
 
 
 .hex-question {
-    font-size: 1.5em;
-    margin: 20px 0;
+font-size: 1.5em;
+margin: 20px 0;
+
 }
 
 .options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 81%;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 81%;
+
 }
 
 button {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    margin: 5px;
-    width: 80%;
+padding: 10px 20px;
+background-color: black;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+margin: 5px;
+width: 80%;
+
 }
 
 button:hover {
-    background-color: gray;
+background-color: gray;
+
 }
 
 .result {
-    margin-top: 15px;
-    font-size: 1.2em;
+margin-top: 15px;
+font-size: 1.2em;
+
 }
 
 @media (max-width: 800px) {
-    body {
-        flex-direction: column;
-    }
-    .text-section, .practice-section {
-        width: 100%;
-    }
+body {
+flex-direction: column;
+
+}
+
+.text-section, .practice-section {
+width: 100%;
+
+}
 }

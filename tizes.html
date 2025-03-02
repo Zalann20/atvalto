@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tízes számrendszer</title>
-    <link rel="stylesheet" href="tizes.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tízes számrendszer</title>
+<link rel="stylesheet" href="tizes.css">
 </head>
 <body>
+
+
+<div class="text-section">
 <h1>10-es számrendszer</h1>
 <h2>A tízes számrendszerről</h2>
 <p>A tízes, másnéven a decimális számrendszer a legelterjedtebb számrendszer, amit a mindennapi életben is használunk.</p>
 <p>A tízes számrendszerben a számok 0-tól 9-ig terjednek.</p>
+      
+</div>
+    
+<div class="practice-section">
+<h1>Decimálisból Más Számrendszerekbe</h1>
         
+<div class="question" id="binaryQuestion"></div>
+<input type="number" id="binaryAnswer" placeholder="Bináris érték">
+<button onclick="checkBinary()">Ellenőrzés</button>
+<div class="result" id="binaryResult"></div>
+        
+<div class="question" id="octalQuestion"></div>
+<input type="number" id="octalAnswer" placeholder="Oktális érték">
+<button onclick="checkOctal()">Ellenőrzés</button>
+<div class="result" id="octalResult"></div>
+        
+<div class="question" id="hexQuestion"></div>
+<input type="text" id="hexAnswer" placeholder="Hexadecimális érték">
+<button onclick="checkHex()">Ellenőrzés</button>
+<div class="result" id="hexResult"></div>
+        
+<button onclick="generateQuestions()">Következő Feladat</button>
+</div>
+<script src="tizes.js" ></script>
 </body>
 </html>

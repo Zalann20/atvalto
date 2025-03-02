@@ -12,7 +12,7 @@ document.getElementById("result").textContent = "";
 function checkAnswer() {
 const userInput = document.getElementById("userAnswer").value.trim();
 if (!/^[0-9]+$/.test(userInput)) {
-document.getElementById("result").textContent = "Csak számokat adj meg!";
+document.getElementById("result").textContent = "Csak számokat adjon meg!";
 document.getElementById("result").style.color = "red";
 return;
 
@@ -20,7 +20,7 @@ return;
             
 const userNumber = parseInt(userInput, 10);
 if (userNumber === currentCorrectAnswer) {
-document.getElementById("result").textContent = "Helyes válasz! 🎉";
+document.getElementById("result").textContent = "Helyes válasz!";
 document.getElementById("result").style.color = "green";
 } else {
 document.getElementById("result").textContent = `Helytelen! A helyes válasz: ${currentCorrectAnswer}`;

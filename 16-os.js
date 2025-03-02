@@ -23,7 +23,7 @@ const btn = document.createElement("button");
 btn.textContent = option;
 btn.onclick = () => checkAnswer(option);
 optionsContainer.appendChild(btn);});
-    
+document.getElementById("result").style.backgroundColor="#dddddd";    
 document.getElementById("result").textContent = "";
 
 }

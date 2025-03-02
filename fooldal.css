@@ -37,7 +37,7 @@ body {
 }
 
 .bubble:hover {
-    background-color: #5a707e;
+    background-color: black;
     transform: scale(1.05);
 }
 

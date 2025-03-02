@@ -2,9 +2,9 @@ let decimalNumber = 0;
 
 function generateQuestions() {
 decimalNumber = Math.floor(Math.random() * 256); // 0-255 között
-document.getElementById("binaryQuestion").textContent = `Mi a(z) ${decimalNumber}  szám bináris megfelelője?`;
-document.getElementById("octalQuestion").textContent = `Mi a(z) ${decimalNumber}  szám oktális megfelelője?`;
-document.getElementById("hexQuestion").textContent = `Mi a(z) ${decimalNumber}  szám hexadecimális megfelelője?`;
+document.getElementById("binaryQuestion").textContent = `Mi a ${decimalNumber}   bináris megfelelője?`;
+document.getElementById("octalQuestion").textContent = `Mi a ${decimalNumber}   oktális megfelelője?`;
+document.getElementById("hexQuestion").textContent = `Mi a ${decimalNumber}   hexadecimális megfelelője?`;
     
 document.getElementById("binaryAnswer").value = "";
 document.getElementById("octalAnswer").value = "";

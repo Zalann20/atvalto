@@ -31,13 +31,19 @@ document.getElementById("result").textContent = "";
 function checkAnswer(selectedAnswer) {
 if (selectedAnswer === currentCorrectAnswer) {
 document.getElementById("result").textContent = "Helyes válasz!";
-document.getElementById("result").style.color = "green";
+document.getElementById("result").style.color = "white";
+document.getElementById("result").style.backgroundColor = "green";
+document.getElementById("result").style.padding = "5px";
+document.getElementById("result").style.borderRadius = "5px";
 
 }
 
 else {
 document.getElementById("result").textContent = `Helytelen! A helyes válasz: ${currentCorrectAnswer}`;
-document.getElementById("result").style.color = "red";
+document.getElementById("result").style.color = "white";
+document.getElementById("result").style.backgroundColor = "red";
+document.getElementById("result").style.padding = "5px";
+document.getElementById("result").style.borderRadius = "5px";
 
 }
 }

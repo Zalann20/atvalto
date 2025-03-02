@@ -9,22 +9,26 @@ document.getElementById("userAnswer").value = "";
 document.getElementById("result").textContent = "";
 
 }
-
 function checkAnswer() {
-const userInput = parseInt(document.getElementById("userAnswer").value, 10);
-if (userInput === currentCorrectAnswer) {
+const userInput = document.getElementById("userAnswer").value.trim();
+if (!/^[0-9]+$/.test(userInput)) {
+document.getElementById("result").textContent = "Csak számokat adj meg!";
+document.getElementById("result").style.color = "red";
+return;
+
+}
+            
+const userNumber = parseInt(userInput, 10);
+if (userNumber === currentCorrectAnswer) {
 document.getElementById("result").textContent = "Helyes válasz! 🎉";
 document.getElementById("result").style.color = "green";
-
-} 
-
-else {
+} else {
 document.getElementById("result").textContent = `Helytelen! A helyes válasz: ${currentCorrectAnswer}`;
 document.getElementById("result").style.color = "red";
 
 }
 }
 
-        
-window.onload = generateQuestion;
+
+window.onload = generateQuestion;indow.onload = generateQuestion;
     

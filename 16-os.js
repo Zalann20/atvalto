@@ -4,7 +4,7 @@ function generateQuestion() {
 const randomNumber = Math.floor(Math.random() * 256); // 0-255 között
 const hexValue = randomNumber.toString(16).toUpperCase();
 currentCorrectAnswer = randomNumber;
-document.getElementById("hexQuestion").textContent = `Mi a(z) ${hexValue} hexadecimális szám decimális megfelelője?`;
+document.getElementById("hexQuestion").textContent = `Mi a ${hexValue}   decimális megfelelője?`;
     
 const optionsContainer = document.getElementById("options");
 optionsContainer.innerHTML = "";

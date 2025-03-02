@@ -4,7 +4,7 @@ function generateQuestion() {
 const randomNumber = Math.floor(Math.random() * 256); // 0-255 között
 const binValue = randomNumber.toString(2).padStart(8, '0');
 currentCorrectAnswer = randomNumber;
-document.getElementById("binQuestion").textContent = `Mi a(z) ${binValue} bináris szám decimális megfelelője?`;
+document.getElementById("binQuestion").textContent = `Mi a ${binValue}   decimális megfelelője?`;
 document.getElementById("userAnswer").value = "";
 document.getElementById("result").textContent = "";
 

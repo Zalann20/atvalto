@@ -45,6 +45,8 @@ padding: 10px;
 margin: 10px;
 width: 80%;
 text-align: center;
+border-radius: 5px;
+box-shadow: 8px 10px 5px rgb(0, 0, 0);
 
 }
 

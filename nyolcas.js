@@ -4,7 +4,7 @@ function generateQuestion() {
 const randomNumber = Math.floor(Math.random() * 256); // 0-255 között
 const octalValue = randomNumber.toString(8).toUpperCase();
 currentCorrectAnswer = randomNumber;
-document.getElementById("octalQuestion").textContent = `Mi a(z) ${octalValue} oktális szám decimális megfelelője?`;
+document.getElementById("octalQuestion").textContent = `Mi a ${octalValue}  decimális megfelelője?`;
     
     
 const optionsContainer = document.getElementById("options");

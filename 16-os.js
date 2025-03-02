@@ -30,7 +30,7 @@ document.getElementById("result").textContent = "";
 
 function checkAnswer(selectedAnswer) {
 if (selectedAnswer === currentCorrectAnswer) {
-document.getElementById("result").textContent = "Helyes válasz! 🎉";
+document.getElementById("result").textContent = "Helyes válasz!";
 document.getElementById("result").style.color = "green";
 
 }

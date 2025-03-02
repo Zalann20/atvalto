@@ -13,7 +13,7 @@ function checkAnswer() {
 const userInput = document.getElementById("userAnswer").value.trim();
 if (!/^[0-9]+$/.test(userInput)) {
 document.getElementById("result").textContent = "Csak számokat adjon meg!";
-document.getElementById("result").style.color = "red";
+document.getElementById("result").style.color = "red"; 
 return;
 
 }

@@ -84,3 +84,21 @@ width: 100%;
     
 }
 }
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Bal alsó sarokban */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 8px 8px 5px rgb(0, 0, 0);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}

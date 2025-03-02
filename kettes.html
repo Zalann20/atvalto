@@ -12,7 +12,7 @@
 
 <h2>A kettes számrendszerről</h2>
     
-<p>A kettes vagy bináris számrendszer olyan helyiérték-jelölő számrendszer amely a számot kizárólag a 0 és 1-es számjegyekkel ábrázolja.Ezt a számrendszert használják a modern számítógépek is. </p>
+<p>A kettes vagy bináris számrendszer olyan helyiérték-jelölő számrendszer amely a számot kizárólag a 0 és 1-es számjegyekkel ábrázolja. Ezt a számrendszert használják a modern számítógépek is. </p>
     
 <h2>Átváltás 10-es számrendszerbe</h2>
     
@@ -29,12 +29,13 @@
 <div class="bin-question" id="binQuestion"></div>
 <input type="number" id="userAnswer" placeholder="Írja be a választ">
 <div class="result" id="result"></div>
-<button onclick="generateQuestion()">Következő Feladat</button>
 <button onclick="checkAnswer()">Ellenőrzés</button>
-
+<button id="nextButton" onclick="generateQuestion()" style="display: none;">Következő Feladat</button> <!-- Alapból rejtett gomb -->
 </div>
+<a href="fooldal.html" class="back-to-home">Vissza a főoldalra</a>
 
-
-<script  src="kettes.js"></script>
+<script src="kettes.js"></script>
 </body>
 </html>
+
+

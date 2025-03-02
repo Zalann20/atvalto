@@ -1,56 +1,34 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <link rel="stylesheet" href="16-os.css">
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Magyarázat</title>
-
 </head>
-
 <body>
 
 <div class="text-section">
-<h1>16-os vagy hexadecimális számrendszer</h1>
-
-<h2>A tizenhatos számrendszerről</h2>
-
-<p>A 0-9 számjegyek használata értelemszerű (azaz: a tízes számrendszernek megfelelő), az A számjegy 10-et, a B számjegy 11-et, a C számjegy 12-t, a D számjegy 13-at, az E számjegy 14-et, míg az F számjegy 15-öt jelöl (ez összesen 16 számjegy, tekintettel arra, hogy a nulla az első).</p>
-
-<p>Átváltás 10-es számrendszerbe</p>
-
- 
-
-Ahelyett, hogy egyből a lehető legnagyobb hatvánnyal osztanánk, az új alappal osztunk sorozatosan, így a kisebb egységektől haladunk a nagyobbak felé. A maradékok az egyre nagyobb egységek számát jelzik. Előnye, hogy nem kell előre megbecsülni, hogy mekkora a lehető legnagyobb hatvány, ami még nem kisebb az adott számnál.
-
- 
-
-Az eredeti számot maradékosan osztjuk tizenhattal, így megkapjuk, hány tizenhatos lenne benne. A maradék az egyesek számát adja. Megnézzük, hogy van-e elég tizenhatos ahhoz, hogy egy nagyobb egységet képezzen. Ha van, akkor egy maradékos osztással megkapjuk, hány tizenhatost nem lehet egy nagyobb egységre beváltani. Ismételjük az osztásokat, amíg nem kapunk egy tizenhatnál kisebb számot. Ez lesz a tizenhatos számrendszerbe átírt szám első jegye. A többi jegyét fordított sorrendben adják a maradékok.
-
- 
-
-<h2>Például</h2>
-
-ABCD=13*16<sup>0</sup>+12*16<sup>1</sup>+11*16<sup>2</sup>+10*16<sup>3</sup>=13+192+2816+40960=43981
-
+    <h1>16-os vagy hexadecimális számrendszer</h1>
+    <h2>A tizenhatos számrendszerről</h2>
+    <p>A 0-9 számjegyek használata értelemszerű (azaz: a tízes számrendszernek megfelelő), az A számjegy 10-et, a B számjegy 11-et, a C számjegy 12-t, a D számjegy 13-at, az E számjegy 14-et, míg az F számjegy 15-öt jelöl (ez összesen 16 számjegy, tekintettel arra, hogy a nulla az első).</p>
+    <p>Átváltás 10-es számrendszerbe</p>
+    <p>Ahelyett, hogy egyből a lehető legnagyobb hatvánnyal osztanánk, az új alappal osztunk sorozatosan, így a kisebb egységektől haladunk a nagyobbak felé...</p>
+    <h2>Például</h2>
+    <p>ABCD=13*16<sup>0</sup>+12*16<sup>1</sup>+11*16<sup>2</sup>+10*16<sup>3</sup>=13+192+2816+40960=43981</p>
 </div>
     
 <div class="practice-section">
-<h1>Hexadecimális gyakorló</h1>
-<div class="hex-question" id="hexQuestion"></div>
-<div class="options" id="options"></div>
-<div class="result" id="result"></div>
-<button  onclick="generateQuestion()">Következő Feladat</button>
-
+    <h1>Hexadecimális gyakorló</h1>
+    <div class="hex-question" id="hexQuestion"></div>
+    <div class="options" id="options"></div>
+    <div class="result" id="result"></div>
+    <button onclick="generateQuestion()">Következő Feladat</button>
 </div>
+
+<!-- Vissza a főoldalra gomb -->
+<a href="fooldal.html" class="back-to-home">Vissza a főoldalra</a>
 
 <script src="16-os.js"></script>
 </body>
-
 </html>

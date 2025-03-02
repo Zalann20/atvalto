@@ -7,13 +7,18 @@ currentCorrectAnswer = randomNumber;
 document.getElementById("binQuestion").textContent = `Mi a ${binValue}   decimális megfelelője?`;
 document.getElementById("userAnswer").value = "";
 document.getElementById("result").textContent = "";
+document.getElementById("result").style.backgroundColor="#dddddd"
 
 }
 function checkAnswer() {
 const userInput = document.getElementById("userAnswer").value.trim();
 if (!/^[0-9]+$/.test(userInput)) {
-document.getElementById("result").textContent = "Csak számokat adjon meg!";
+document.getElementById("result").textContent = "Adjon meg egy számot!";
 document.getElementById("result").style.color = "red"; 
+document.getElementById("result").style.color = "white";
+document.getElementById("result").style.backgroundColor = "red";
+document.getElementById("result").style.padding = "5px";
+document.getElementById("result").style.borderRadius = "5px";
 return;
 
 }
@@ -21,10 +26,17 @@ return;
 const userNumber = parseInt(userInput, 10);
 if (userNumber === currentCorrectAnswer) {
 document.getElementById("result").textContent = "Helyes válasz!";
-document.getElementById("result").style.color = "green";
+document.getElementById("result").style.color = "white";
+document.getElementById("result").style.backgroundColor = "green";
+document.getElementById("result").style.padding = "5px";
+document.getElementById("result").style.borderRadius = "5px";
+    
 } else {
 document.getElementById("result").textContent = `Helytelen! A helyes válasz: ${currentCorrectAnswer}`;
-document.getElementById("result").style.color = "red";
+document.getElementById("result").style.color = "white";
+document.getElementById("result").style.backgroundColor = "red";
+document.getElementById("result").style.padding = "5px";
+document.getElementById("result").style.borderRadius = "5px";
 
 }
 }

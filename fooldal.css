@@ -20,7 +20,7 @@ body {
 }
 
 .bubble {
-    background-color: #3E5667;
+    background-color: rgb(43, 39, 39);
     border-radius: 10px;
     padding: 40px;
     min-width: 150px; 

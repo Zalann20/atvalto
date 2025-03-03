@@ -46,6 +46,12 @@ align-items: center;
 width: 80%;
     
 }
+.next-question{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 80%;
+}
     
 button {
     
